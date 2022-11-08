@@ -39,18 +39,18 @@ class Calculator:
 
 
 class CaloriesCalculator(Calculator):
-    def get_calories_remained(self):  # Получает остаток калорий на сегодня
+    def get_calories_remained(self):  # Gets the remaining calories for today
         x = self.limit - self.get_today_stats()
         if x > 0:
-            return f'Сегодня можно съесть что-нибудь' \
-                   f' ещё, но с общей калорийностью не более {x} кКал'
+            return f'You can eat something else today,' \
+                   f' but with a total calorie content of no more than {x} kcal'
         else:
-            return('Хватит есть!')
+            return('Stop eating!')
 
 
 class CashCalculator(Calculator):
-    USD_RATE = float(60)  # Курс доллар США.
-    EURO_RATE = float(70)  # Курс Евро.
+    USD_RATE = float(60)  # US dollar exchange rate.
+    EURO_RATE = float(70)  # Euro exchange rate.
 
     def get_today_cash_remained(self, currency,
                                 USD_RATE=USD_RATE, EURO_RATE=EURO_RATE):
@@ -64,17 +64,17 @@ class CashCalculator(Calculator):
             currency_type = 'Euro'
         elif currency_type == 'rub':
             cash_remained == 1.00
-            currency_type = 'руб'
+            currency_type = 'rub'
         if cash_remained > 0:
             return (
-                f'На сегодня осталось {round(cash_remained, 2)} '
+                f'Left for today {round(cash_remained, 2)} '
                 f'{currency_type}'
             )
         elif cash_remained == 0:
-            return 'Денег нет, держись'
+            return 'No money, keep it up!'
         elif cash_remained < 0:
-            return 'Денег нет, держись:' \
-                   ' твой долг - {0:.2f} {1}'.format(-cash_remained,
+            return 'No money, keep it up:' \
+                   ' your debt is - {0:.2f} {1}'.format(-cash_remained,
                                                      currency_type)
 
     def get_week_stats(self):

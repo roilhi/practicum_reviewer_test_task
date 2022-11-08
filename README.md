@@ -1,14 +1,17 @@
-# Тестовое задание на позицию код-ревьюера Яндекс.Практикум
+# Test Task Code Reviewers
 
-### Дано
-* В файле `main.py` находится пример реального кода, который сдал студент к заданию. 
-* Текст задания находится по [ссылке](https://docs.google.com/document/d/1sEithgM7bJbBqEZYOEOJzUuvFD3iyy_Pf2iGv7aWhsE/edit?usp=sharing)
-* Общие требования к коду, с которыми ознакамливаются студенты, находятся по [ссылке](https://docs.google.com/document/d/1s_FqVkqOASwXK0DkOJZj5RzOm4iWBO5voc_8kenxXbw/edit)
+### Given
 
-### Что нужно сделать
-* Нужно провести ревью этого кода. Найти в нем ошибки, неточности, неэффективные места, или дать какие-то необязательные рекомендации по улучшению.
-* Можно сделать форк репозитория или gist _(не делайте Pull Request в этот репозиторий)_ и расставить комментарии _над_ проблемными строками в `main.py`.
-* Учтите, что вы "ревьюите" студента, то есть не надо просто исправлять ошибки, нужно оставлять комментарии и рекомендации.
+- In the `main.py` file is an example of real code that a student has submitted for a task.
+- Here is the text of the task [Link](https://docs.google.com/document/d/1XkThc-84E6yzcZ6O4UkriTBwDFe9yfRCNvsNVci9CX4/edit)
+- Here you can find the general student requirements for the code [Link](https://docs.google.com/document/d/1koouRJP-wCsNWz-KhVM15-cmgZOJAAX6R8uU8usUtKU/edit)
 
-### Как сдавать
-* В форме прикрепите ссылку на ваш репозиторий или на gist с комментариями.
+### What you should do
+
+- You need to review this code. Find errors, inaccuracies, inefficient places in it, or give some optional recommendations for improvement.
+- You can make a fork of the repository or gist (do not send a Pull Request to this repository) and place comments on the problematic lines in `main.py`.
+- Keep in mind that you are "reviewing" the student, that is, you do not just need to correct mistakes, you need to leave comments and recommendations.
+
+### How to submit
+
+- In the form, attach a link to your repository or to gist with comments.
