@@ -1,7 +1,8 @@
 import datetime as dt
 
+# There are no docstring comments
+class Record: 
 
-class Record:
     def __init__(self, amount, comment, date=''):
         self.amount = amount
         self.date = (
@@ -12,6 +13,10 @@ class Record:
 
 
 class Calculator:
+    '''
+    It is recommended to add docstring comments in order to know about the class 
+    or methods detalis (inputs, outputs, etc)
+    '''
     def __init__(self, limit):
         self.limit = limit
         self.records = []
@@ -23,7 +28,7 @@ class Calculator:
         today_stats = 0
         for Record in self.records:
             if Record.date == dt.datetime.now().date():
-                today_stats = today_stats + Record.amount
+                today_stats = today_stats + Record.amount #record.amount not defined in constructor __init__
         return today_stats
 
     def get_week_stats(self):
@@ -40,6 +45,7 @@ class Calculator:
 
 class CaloriesCalculator(Calculator):
     def get_calories_remained(self):  # Gets the remaining calories for today
+       # missing __init__ class constructor , so "limit" attribute won´t be passed 
         x = self.limit - self.get_today_stats()
         if x > 0:
             return f'You can eat something else today,' \
@@ -79,3 +85,6 @@ class CashCalculator(Calculator):
 
     def get_week_stats(self):
         super().get_week_stats()
+
+# Missing if __name__=="main": to execute the code.
+# classes have been created but they are not called or imported
